@@ -1,0 +1,114 @@
+/* font-family: 'Quicksand', sans-serif; */
+html{
+    font-size: 62.5%;
+}
+
+*{
+    box-sizing: border-box;
+}
+.fondo-index{
+    background: #323232;
+    display: grid;
+    grid-template-areas: "a""b";
+    width: 100%;
+    margin: auto ;
+  
+}
+.fondo-titulo{
+    grid-area: a;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 13rem;
+    text-align: center;
+    color: cornsilk;
+    margin-top: 18rem;
+    margin-bottom: 0;
+}
+.fondo-subtitulo{
+    grid-area: b;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 3rem;
+    text-align: center;
+    color: cornsilk;
+    margin-top: 3rem;
+    text-decoration-line: overline;
+    text-decoration-thickness: from-font;
+}
+@media screen and (min-width: 640px) and (max-width: 1280px) {
+
+    .fondo-titulo{        
+        font-size: 11rem;
+    }
+    .fondo-subtitulo{
+        font-size: 2.3rem;
+    }
+    
+}
+@media screen and (max-width: 640px) {
+
+    .fondo-titulo{        
+        font-size: 9rem;
+    }
+    .fondo-subtitulo{
+        font-size: 2rem;
+    }
+    
+}
+
+.fondo-general{
+    display: grid;
+    grid-template-areas: "a""b""c";
+    width: 100%;
+    margin: auto ;
+}
+.header-general{
+    display: grid;
+    grid-template-areas: "d e";
+    grid-template-columns: 30% 70%;
+    width: 100%;
+    margin: auto ;
+}
+.header-titulo{
+    background: #323232;
+    grid-area: d;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 4.5rem;
+    text-align: center;
+    color: cornsilk;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.header-nav{
+    background: #323232;
+    grid-area: e;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 1.7rem;
+    text-align: center;    
+    margin-top: 0;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    display: grid;
+    grid-template-areas: "f g h i";
+    justify-content: stretch;
+    align-content: center;
+}
+.nav-link{
+    color: cornsilk;
+    text-decoration:none;
+}
+echo "# proyectoFinal2117" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/spalenzam/proyectoFinal2117.git
+git push -u origin main
