@@ -67,7 +67,7 @@ html{
 .header-general{
     display: grid;
     grid-template-areas: "d e";
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 31% 70%;
     width: 100%;
     margin: auto ;
 }
@@ -99,16 +99,183 @@ html{
     display: grid;
     grid-template-areas: "f g h i";
     justify-content: stretch;
-    align-content: center;
+    align-content: center;    
 }
+.nav-respo{
+    display: none;
+}
+
 .nav-link{
     color: cornsilk;
     text-decoration:none;
 }
-echo "# proyectoFinal2117" >> README.md
+.nav1{
+    grid-area: f;
+}
+.nav2{
+    grid-area: g;
+}
+.nav3{
+    grid-area: h;
+}
+.nav4{
+    grid-area: i;
+}
+
+@media screen and (min-width: 640px) and (max-width: 1280px) {
+    .header-titulo{
+        font-size: 3.8rem;
+    }
+    .nav-respo{
+        display: none;
+    }
+}
+@media screen and (max-width: 640px) {
+    .header-general{
+        display: grid;
+        grid-template-areas: "d e";
+        grid-template-columns: 10% 90%;
+        width: 100%;
+        margin: auto ;
+    }
+    .header-titulo{
+        background: #323232;
+        grid-area: e;
+        width: 100%;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+        font-size: 3rem;
+        text-align: center;
+        color: cornsilk;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        padding-right: 10rem;
+        
+    }
+    .header-nav{
+        display: none;
+    }
+    .nav-respo{
+        background: #323232;
+        grid-area: d;
+        width: 100%;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+        font-size: 1.7rem;
+        text-align: center;    
+        margin-top: 0;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        display: grid;   
+        padding-left: 2rem;
+    }
+    .nav-link{
+        color: cornsilk;
+        text-decoration:none;
+        padding-left: 0rem;
+    }
+    .nav1{
+        grid-area: f;
+    }
+    .nav2{
+        grid-area: g;
+    }
+    .nav3{
+        grid-area: h;
+    }
+    .nav4{
+        grid-area: i;
+    }
+    .nav-respo>ul{
+        display: none;
+        list-style:none;
+      }
+      
+    .nav-respo>input:checked  ~ ul{
+        display:grid;
+        grid-template-areas: "f""g""h""i";
+        justify-content: stretch;
+        align-content:flex-end;        
+        justify-items: flex-start;
+      }
+      
+    .nav-respo>input {
+        display: none;
+      }
+      
+    .nav-respo>label {
+        box-sizing: border-box;
+        display: inline-block;
+        border: 1px solid cornsilk;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+      }
+      
+    .nav-respo>label:hover{
+        background: cornsilk;
+      }
+      
+    .nav-respo>input:checked ~ label {
+        background: cornsilk; 
+      }
+      
+    .nav-respo>ul{
+        margin-top:0;
+        padding: 0;
+        width: 200px;
+      
+      }      
+      
+    .nav-respo>li {
+        display: block;
+        background: lightgrey;
+        margin: 0;
+        padding: 10px;
+        list-style: none;
+        border-bottom: 1px solid grey;
+      }
+      
+    .nav-respo>li:hover {
+        filter: brightness(110%);
+      }
+     
+}
+
+.main-bodegas{
+    display: grid;
+    grid-template-areas: "z""y";
+    justify-content: center;
+    align-content: center;
+    margin-top: 5rem;
+
+}
+.carousel {
+    grid-area:z ;
+    width: 80rem; 
+    height: auto; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1.7rem;
+    text-align: center;
+   }
+.carousel-item>img{
+    max-height: 45rem;
+}
+
+
+
+
+/* echo "# proyectoFinal2117" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/spalenzam/proyectoFinal2117.git
-git push -u origin main
+git push -u origin main */
