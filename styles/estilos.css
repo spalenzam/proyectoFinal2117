@@ -250,18 +250,21 @@ html{
 
 .main-bodegas{
     display: grid;
-    grid-template-areas: "z""y";
+    grid-template-areas: "carousel""galeria";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
     justify-content: center;
     align-content: center;
     margin-top: 5rem;
-
+    grid-row-gap: 7rem;
 }
 .carousel {
-    grid-area:z ;
+    grid-area:carousel ;
     width: 80rem; 
     height: auto; 
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
+    margin: auto;
     font-size: 1.7rem;
     text-align: center;
    }
@@ -269,7 +272,62 @@ html{
     max-height: 45rem;
 }
 
+.galeria-imagenes{
+    grid-area: galeria;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    justify-self: center;
 
+    display: grid;
+    grid-template-areas: "tituloG""k""l""m";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-content: center;
+
+}
+#textoGal{  
+    grid-area: tituloG;  
+    font-family: 'Lato', sans-serif;
+    color:cornsilk;;
+    font-weight: 400;
+    background-color: #323232;
+    width: 100%;
+    justify-self: center;
+    margin: auto;
+} 
+
+.galeria1{
+    grid-area: k;
+    width: 100%;
+}
+.galeria2{
+    grid-area: l;
+    width: 100%;
+}
+.galeria3{
+    grid-area: m;
+    width: 100%;
+}
+.fotos-galeria1{
+    grid-area: k;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "f1 f1 f1""f2 f2 f2";
+}
+.fotos-galeria2{
+    grid-area: l;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "f3 f3 f3""f4 f4 f4";
+}
+.fotos-galeria3{
+    grid-area: m;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "f5 f5 f5""f6 f6 f6";
+}
 
 
 /* echo "# proyectoFinal2117" >> README.md
