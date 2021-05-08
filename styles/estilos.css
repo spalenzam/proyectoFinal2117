@@ -210,8 +210,8 @@ html{
         display: inline-block;
         border: 1px solid cornsilk;
         border-radius: 5px;
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         line-height: 30px;
         font-weight: bold;
         text-align: center;
@@ -278,7 +278,6 @@ html{
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     justify-self: center;
-
     display: grid;
     grid-template-areas: "tituloG""k""l""m";
     grid-template-columns: 100%;
@@ -287,46 +286,76 @@ html{
     align-content: center;
 
 }
+.galeria-imagenes h2{
+    font-size: 3rem;
+    font-weight: 300;
+    color:cornsilk;
+    background-color: #505050;
+    padding: 1.5rem;
+}
 #textoGal{  
     grid-area: tituloG;  
     font-family: 'Lato', sans-serif;
-    color:cornsilk;;
-    font-weight: 400;
+    font-size: 4rem;
+    text-align: center;
+    color:cornsilk;
+    font-weight: 300;
     background-color: #323232;
     width: 100%;
     justify-self: center;
     margin: auto;
+    margin-bottom: 3rem;
+    padding: 20px;
 } 
 
 .galeria1{
     grid-area: k;
     width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    display: grid;
 }
 .galeria2{
     grid-area: l;
     width: 100%;
+    text-align: center;
 }
 .galeria3{
     grid-area: m;
     width: 100%;
+    text-align: center;
 }
-.fotos-galeria1{
-    grid-area: k;
-    width: 100%;
-    display: grid;
-    grid-template-areas: "f1 f1 f1""f2 f2 f2";
+
+.tz-gallery {
+    padding: 40px;
 }
-.fotos-galeria2{
-    grid-area: l;
-    width: 100%;
-    display: grid;
-    grid-template-areas: "f3 f3 f3""f4 f4 f4";
+
+.tz-gallery .lightbox img {
+    width:90%;
+    margin-bottom: 30px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
 }
-.fotos-galeria3{
-    grid-area: m;
-    width: 100%;
-    display: grid;
-    grid-template-areas: "f5 f5 f5""f6 f6 f6";
+.row>img{
+    max-height: 0.1rem;
+} 
+
+.lightbox img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.tz-gallery img {
+    border-radius: 6px;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+.col-sm-6{
+    padding: 0px;
 }
 
 
