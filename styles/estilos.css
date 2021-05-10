@@ -144,13 +144,13 @@ html{
         width: 100%;
         font-family: 'Montserrat', sans-serif;
         font-weight: 200;
-        font-size: 3rem;
+        font-size: 4rem;
         text-align: center;
         color: cornsilk;
         margin-top: 0;
         margin-bottom: 0;
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
         padding-right: 10rem;
         
     }
@@ -216,6 +216,9 @@ html{
         font-weight: bold;
         text-align: center;
         user-select: none;
+        color: cornsilk;
+        background-color:#505050; 
+        padding: 0.5rem;
       }
       
     .nav-respo>label:hover{
@@ -290,7 +293,7 @@ html{
     font-size: 3rem;
     font-weight: 300;
     color:cornsilk;
-    background-color: #505050;
+    background-color: #b2936d;
     padding: 1.5rem;
 }
 #textoGal{  
@@ -358,6 +361,135 @@ html{
     padding: 0px;
 }
 
+
+.bodega-footer{
+    width: 100%;
+    height: auto;
+    background: #323232;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    display: grid;
+    grid-template-areas: "iconosF""footertxt""copy";
+    grid-template-columns: 100%;
+    justify-content: center;
+}
+
+.footer-iconos{
+    grid-area: iconosF;
+    text-align: center;
+    font-size: 2.5rem;
+    color: cornsilk;  
+    padding-top: 2rem;  
+    padding-bottom: 2rem;
+}
+.fab:hover {    
+    opacity: 0.7;
+    color: #b2936d;
+    
+} 
+.far:hover {    
+    opacity: 0.7;
+    color: #b2936d;    
+} 
+.fab{
+    padding: 1rem;
+}
+.far{
+    padding: 1rem;
+}
+
+.footer-txt{
+    grid-area: footertxt;
+    font-size: 1.3rem;
+    justify-content: center;
+    display: grid;
+    color: cornsilk;
+    width: 100%;
+    grid-template-areas: "txt1 txt2 txt3";
+    /* grid-template-columns: 100%; */
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 2rem;
+}
+.footer-txt h4{
+    font-size: 1.7rem;
+}
+.footer-txt p{
+    margin-bottom: 0.1rem;
+}
+.footer-txt a{
+    color: cornsilk;
+}
+.footer-txt1{
+    grid-area: txt1;
+    text-align: center;
+    padding-right: 8rem;
+}
+.footer-txt2{
+    grid-area: txt2;
+    text-align: center;
+    padding-right: 8rem;
+    padding-left: 8rem;
+}
+.footer-txt3{
+    grid-area: txt3;
+    text-align: center;
+    padding-left: 8rem;
+}
+.footer-copy{
+    grid-area: copy;
+    color: cornsilk;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+}
+
+@media screen and (min-width: 640px) and (max-width: 1280px) {
+    .footer-txt1{
+        padding-right: 4rem;
+    }
+    .footer-txt2{
+        padding-right: 4rem;
+        padding-left: 4rem;
+    }
+    .footer-txt3{
+        padding-left: 4rem;
+    }
+}
+@media screen and (max-width: 640px) {
+    .footer-txt{
+        grid-area: footertxt;
+        font-size: 1.3rem;
+        justify-content: center;
+        align-content: center;
+        display: grid;
+        color: cornsilk;
+        width: 100%;
+        grid-template-areas: "txt1" "txt2" "txt3";
+        justify-content: center;
+        margin-bottom: 2rem;        
+    }
+    .footer-txt1{
+        grid-area: txt1;
+        justify-self: center;
+        text-align: center;
+        margin: 2rem;
+        padding: 0rem;
+    }
+    .footer-txt2{
+        grid-area: txt2;
+        justify-self: center;
+        text-align: center;
+        margin: 2rem;
+        padding: 0rem;
+    }
+    .footer-txt3{
+        grid-area: txt3;
+        justify-self: center;
+        text-align: center;
+        margin: 2rem;
+        padding: 0rem;
+    }
+}
 
 /* echo "# proyectoFinal2117" >> README.md
 git init
