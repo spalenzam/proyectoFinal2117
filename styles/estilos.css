@@ -144,7 +144,7 @@ html{
         width: 100%;
         font-family: 'Montserrat', sans-serif;
         font-weight: 200;
-        font-size: 4rem;
+        font-size: 5rem;
         text-align: center;
         color: cornsilk;
         margin-top: 0;
@@ -233,7 +233,7 @@ html{
         margin-top:0;
         padding: 0;
         width: 200px;
-      
+        font-size: 2.1rem;
       }      
       
     .nav-respo>li {
@@ -489,7 +489,201 @@ html{
         margin: 2rem;
         padding: 0rem;
     }
+    .footer-txt h4{
+        font-size: 2.1rem;
+    }
+    .footer-txt p{
+        font-size: 1.9rem;
+    }
+    .footer-copy p{
+        font-size: 1.6rem;
+    }
 }
+
+.titulo-bodega-vinos{
+    color: cornsilk;
+    font-size: 2.8rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    background: #323232;
+    /* background: #b2936d; */
+    margin-top: 3rem;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-bottom: 4rem;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 33%;
+    max-width: 33%;
+    /* padding: 0 4px; */
+    padding: 3rem 5rem;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  .txtTituloVino{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 2rem;
+    font-weight: bold;
+    justify-content: center;
+    display: flex
+    
+  }
+
+  .txtVino{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    display: flex
+    
+  }
+  .precio{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: grey;
+    text-align: center;
+    justify-content: center;
+    display: flex
+  }
+  
+  p .button-vino{
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 0.3rem;
+    outline: 0;
+    color: white;
+    background-color: #323232;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin: auto;
+    width: 30%;
+    text-align: center;
+    justify-content: center;
+    display: flex    
+  }
+  p .button-vino:hover {
+    opacity: 0.7;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (min-width: 640px) and (max-width: 1280px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 640px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+/*
+.main-vinos{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 13rem;
+    text-align: center;
+    display: grid;
+    grid-template-areas: "bod1""bod2""bod3";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-content: center;
+    
+}
+.vinos-bod1{
+    grid-area: bos1;
+    display: grid;
+    font-family: 'Montserrat', sans-serif;
+    grid-template-areas: "tituloBodega1" "f1 f2 f3" "f4 f5 f6";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-content: center;
+}
+.vino1-bod1{
+    grid-area: f1;
+}
+.vino2-bod1{
+    grid-area: f2;
+}
+.vino3-bod1{
+    grid-area: f3;
+}
+.vino4-bod1{
+    grid-area: f4;
+}
+.vino5-bod1{
+    grid-area: f5;
+}
+.vino6-bod1{
+    grid-area: f6;
+}*/
+/* .vinos-bod2{
+    grid-area: bos2;
+    display: grid;
+    grid-template-areas: "tituloBodega2" "f2 f2 f2" "f2 f2 f2";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-content: center;
+}
+.vinos-bod3{
+    grid-area: bos3;
+    display: grid;
+    grid-template-areas: "tituloBodega3" "f3 f3 f3" "f3 f3 f3";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-content: center;
+} */
+
+/* .row{
+    grid-area: ;
+}
+.imgVino{
+    margin: 70px auto 10px auto;
+    width: 100%;
+  }
+  
+  .txtVino{
+    display:block;
+    text-align: center;
+    font-size: 1.2vw;
+  }
+  .colum{
+    margin: 20px 0 0 0 ;
+  }
+  .somh2{
+    background-color: #F2F2F2;
+  
+    height: 20%;
+  } */
 
 /* echo "# proyectoFinal2117" >> README.md
 git init
