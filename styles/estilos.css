@@ -150,7 +150,7 @@ html{
         width: 100%;
         font-family: 'Montserrat', sans-serif;
         font-weight: 200;
-        font-size: 5rem;
+        font-size: 3.5rem;
         text-align: center;
         color: cornsilk;
         margin-top: 0;
@@ -240,7 +240,7 @@ html{
         margin-top:0;
         padding: 0;
         width: 200px;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
       }      
       
     .nav-respo>li {
@@ -278,6 +278,18 @@ html{
     font-size: 1.7rem;
     text-align: center;
    }
+@media screen and (max-width: 640px) {
+    .carousel {
+        grid-area:carousel ;
+        height: auto; 
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        margin: auto;
+        font-size: 1.7rem;
+        text-align: center;
+       }
+}
+
 .imgGrande{
     max-height: 45rem;
 }
