@@ -50,7 +50,7 @@ html{
 @media screen and (max-width: 640px) {
 
     .fondo-titulo{        
-        font-size: 9rem;
+        font-size: 8rem;
     }
     .fondo-subtitulo{
         font-size: 2rem;
@@ -151,7 +151,7 @@ html{
         margin-bottom: 0;
         padding-top: 2rem;
         padding-bottom: 2rem;
-        padding-right: 10rem;
+        padding-right: 2rem;
         
     }
     .header-nav{
@@ -210,8 +210,8 @@ html{
         display: inline-block;
         border: 1px solid cornsilk;
         border-radius: 5px;
-        width: 40px;
-        height: 40px;
+        width: 36px;
+        height: 36px;
         line-height: 30px;
         font-weight: bold;
         text-align: center;
@@ -233,7 +233,7 @@ html{
         margin-top:0;
         padding: 0;
         width: 200px;
-        font-size: 2.1rem;
+        font-size: 1.8rem;
       }      
       
     .nav-respo>li {
@@ -585,7 +585,7 @@ html{
     opacity: 0.7;
   }
   
-  /* Responsive layout - makes a two column-layout instead of four columns */
+
   @media screen and (min-width: 640px) and (max-width: 1280px) {
     .column {
       -ms-flex: 50%;
@@ -594,7 +594,7 @@ html{
     }
   }
   
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+ 
   @media screen and (max-width: 640px) {
     .column {
       -ms-flex: 100%;
@@ -602,88 +602,159 @@ html{
       max-width: 100%;
     }
   }
-/*
-.main-vinos{
+
+  .titulo-quienes{
+    color: cornsilk;
+    font-size: 2.8rem;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 200;
-    font-size: 13rem;
+    font-weight: 300;
+    background: #323232;
+    margin-top: 3rem;
     text-align: center;
-    display: grid;
-    grid-template-areas: "bod1""bod2""bod3";
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
+    padding: 1.5rem;
+    align-items: stretch;
     justify-content: center;
-    align-content: center;
+    display: flex 
+  }
+  .text-quienes{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5rem;
+  }
+  .text-quienes img{
+      max-width: 99%;
+  }
+
+  .hijo1{
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    padding: 3rem 2.8rem;
+    text-align: justify;
+  }
+  
+  .hijo2{
+    padding: 2rem;
+}
+
+.main-contacto{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.main-contacto .form{
+    width:540px;
+    height:640px;
+    background:#323232;
+    border-radius:8px;
+    box-shadow:0 0 40px -10px #000;
+    margin:calc(50vh - 220px) auto;
+    padding:20px 30px;
+    max-width:calc(100vw - 40px);
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;      
+    position:relative
     
 }
-.vinos-bod1{
-    grid-area: bos1;
-    display: grid;
-    font-family: 'Montserrat', sans-serif;
-    grid-template-areas: "tituloBodega1" "f1 f2 f3" "f4 f5 f6";
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    justify-content: center;
-    align-content: center;
-}
-.vino1-bod1{
-    grid-area: f1;
-}
-.vino2-bod1{
-    grid-area: f2;
-}
-.vino3-bod1{
-    grid-area: f3;
-}
-.vino4-bod1{
-    grid-area: f4;
-}
-.vino5-bod1{
-    grid-area: f5;
-}
-.vino6-bod1{
-    grid-area: f6;
-}*/
-/* .vinos-bod2{
-    grid-area: bos2;
-    display: grid;
-    grid-template-areas: "tituloBodega2" "f2 f2 f2" "f2 f2 f2";
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    justify-content: center;
-    align-content: center;
-}
-.vinos-bod3{
-    grid-area: bos3;
-    display: grid;
-    grid-template-areas: "tituloBodega3" "f3 f3 f3" "f3 f3 f3";
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    justify-content: center;
-    align-content: center;
-} */
 
-/* .row{
-    grid-area: ;
+.main-contacto h2{
+    margin:30px 0;
+    padding-bottom:10px;
+    width:180px;
+    font-size: 2.6rem;
+    color:cornsilk;
+    border-bottom:2px solid cornsilk
 }
-.imgVino{
-    margin: 70px auto 10px auto;
-    width: 100%;
-  }
-  
-  .txtVino{
+
+.main-contacto input{
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    font-family:'Montserrat',sans-serif;
+    font-size: 1.5rem; 
+    transition:all .3s;
+    border-bottom:1.5px solid cornsilk
+}
+
+.main-contacto p{
+    margin: 6rem auto;   
+    
+}
+.main-contacto input:focus{
+    border-bottom:2px solid #b2936d
+    
+}
+.main-contacto p:before{    
+    content:attr(type);
     display:block;
-    text-align: center;
-    font-size: 1.2vw;
-  }
-  .colum{
-    margin: 20px 0 0 0 ;
-  }
-  .somh2{
-    background-color: #F2F2F2;
-  
-    height: 20%;
-  } */
+    margin:28px 0 0;
+    font-size:2rem;
+    color:cornsilk
+    
+}
+.main-contacto button{
+    float:right;
+    padding:8px 12px;
+    margin:8px 0 0;
+    font-family:'Montserrat',sans-serif;
+    font-size: 1.5rem;
+    border:2px solid cornsilk;
+    background:0;color:cornsilk;
+    cursor:pointer;
+    transition:all .3s
+}
+
+.main-contacto button:hover{
+    background:#b2936d;
+    color:#fff
+}
+
+.main-contacto div{
+    content:'Hi';
+    position:absolute;
+    bottom:-15px;
+    right:-20px;
+    background:#50505a;
+    color:#fff;
+    width:320px;
+    padding:16px 4px 16px 0;
+    border-radius:6px;
+    font-size:13px;
+    box-shadow:10px 10px 40px -14px #000
+}
+
+@media screen and (min-width: 640px) and (max-width: 1280px) {
+
+    .main-contacto .form{
+        width:440px;
+        height:540px;
+    }
+    .main-contacto p{
+        margin: 4rem auto;    
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .main-contacto .form{
+        width:340px;
+        height:540px;
+    }
+    .main-contacto p{
+        margin: 3rem auto;    
+    }
+}
+
+/*
+
 
 /* echo "# proyectoFinal2117" >> README.md
 git init
