@@ -172,7 +172,7 @@ html{
         font-size: 1.7rem;
         text-align: center;    
         margin-top: 0;
-        padding-top: 1.5rem;
+        padding-top: 2.2rem;
         padding-bottom: 1.5rem;
         display: grid;   
         padding-left: 2rem;
@@ -217,8 +217,8 @@ html{
         display: inline-block;
         border: 1px solid cornsilk;
         border-radius: 5px;
-        width: 36px;
-        height: 36px;
+        width: 40px;
+        height: 40px;
         line-height: 30px;
         font-weight: bold;
         text-align: center;
@@ -645,6 +645,12 @@ html{
     flex-wrap: wrap;
     padding: 2rem 10rem;
   }
+  @media screen and (max-width: 640px) {
+    .text-quienes{
+        padding: 1.8rem 1.5rem;
+      }
+  }
+
   .text-quienes img{
       max-width: 99%;
   }
