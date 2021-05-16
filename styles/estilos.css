@@ -285,7 +285,7 @@ html{
 @media screen and (max-width: 640px) {
     .carousel {
     grid-area:carousel;
-    width: 64rem;
+    width: 50rem;
     height: auto; 
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
@@ -295,8 +295,7 @@ html{
    }
 
    .imgGrande{
-    width: 80rem;
-    max-height: 36rem;
+    max-height: 28.2rem;
     }
 }
 .galeria-imagenes{
@@ -712,7 +711,7 @@ html{
 }
 @media screen and (max-width: 640px) {
     .main-contacto .form{       
-        margin:calc(45vh - 220px) auto;              
+        margin:calc(40vh - 220px) auto;              
     }
 }
 
