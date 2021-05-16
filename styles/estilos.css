@@ -701,7 +701,8 @@ html{
     background:#323232;
     border-radius:8px;
     box-shadow:0 0 40px -10px #000;
-    margin:calc(50vh - 220px) auto;
+    /* margin:calc(50vh - 220px) auto; */
+    margin: 6rem;
     padding:20px 30px;
     max-width:calc(100vw - 40px);
     box-sizing:border-box;
@@ -749,7 +750,7 @@ html{
 .main-contacto p:before{    
     content:attr(type);
     display:block;
-    margin:28px 0 0;
+    margin:28px 50rem 0 0;
     font-size:2rem;
     color:cornsilk
     
@@ -800,19 +801,59 @@ html{
     .main-contacto .form{
         width:340px;
         height:540px;
+        margin: 5rem
     }
     .main-contacto p{
         margin: 3rem auto;    
     }
 }
 
-/*
+.row-contacto{
+    width:100%;
+    height: auto;
+	margin:20px auto;		
+	display: flex;  	
+	flex-flow: row wrap; 	
+	justify-content: center ; 
+	align-items: center ; 	
+	align-content: stretch; 
+}
+.column-contacto{ 
+        text-align:center;
+        margin:0 auto;  
+        justify-content: center;
+}
+.uno{
+    flex: 1 100%;
+    order:0;
+}
+.dos{
+    padding: 1rem 35rem;
+    flex: 1 100%;
+    order:1;
+}
+.dos h3{
+    text-align: center;
+    color: cornsilk;
+    font-family:'Montserrat',sans-serif;
+    padding-bottom: 1rem;
+    background-color: #323232;
+    border-radius: 0.6rem;
+}
 
-
-/* echo "# proyectoFinal2117" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/spalenzam/proyectoFinal2117.git
-git push -u origin main */
+@media screen and (min-width: 640px) and (max-width: 1280px) {
+    .dos{
+        width: 88rem;
+        padding: 1rem 15rem;
+        flex: 1 100%;
+        order:1;
+    }
+}
+@media screen and (max-width: 640px) {
+    .dos{
+        width: 35rem;
+        padding: 1rem 5rem;
+        flex: 1 100%;
+        order:1;
+    }
+}
