@@ -281,10 +281,11 @@ html{
 .imgGrande{
     max-height: 45rem;
 }
+
 @media screen and (max-width: 640px) {
     .carousel {
     grid-area:carousel;
-    width: auto;
+    width: 64rem;
     height: auto; 
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
@@ -294,7 +295,8 @@ html{
    }
 
    .imgGrande{
-    max-height: 27rem;
+    width: 80rem;
+    max-height: 36rem;
     }
 }
 .galeria-imagenes{
